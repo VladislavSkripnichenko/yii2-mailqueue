@@ -132,6 +132,7 @@ class MailQueue extends Mailer
 	
 	public function purge()
 	{
+		//test
 		return Queue::deleteAll('sent_time IS NOT NULL');
 	}
 }
